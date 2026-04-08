@@ -25,7 +25,7 @@ Major analysis blocks in this file include:
 
 ### `config.yaml`
 
-This file defines the main runtime configuration for the Snakemake workflow. It includes:
+This file defines the main runtime configuration for the Snakemake workflow.
 
 ### `cfDNA_metadata2_TNM.csv`
 
