@@ -27,9 +27,9 @@ Major analysis blocks in this file include:
 
 This file defines the main runtime configuration for the Snakemake workflow. It includes:
 
-### `sample_annotation.tsv` and `cfDNA_metadata2_TNM.csv`
+### `cfDNA_metadata2_TNM.csv`
 
-These files provide sample-level metadata used throughout downstream analyses. The `cfDNA_metadata2_TNM.csv` is especially important for label assignment, stage information, and subtyping-related workflows.
+This file provide sample-level metadata used throughout downstream analyses. The `cfDNA_metadata2_TNM.csv` is important for label assignment, stage information, and subtyping-related workflows.
 
 ## Directory Guide
 
