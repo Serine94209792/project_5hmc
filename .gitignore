@@ -1,0 +1,46 @@
+.cursor/
+.mypy_cache/
+.pytest_cache/
+.vscode/
+__pycache__/
+*.pyc
+
+# Local/private configs
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.crt
+
+# Workflow runtime outputs (regenerable)
+rawqc/
+clean/
+cleanqc/
+map/
+mapqc/
+rmdup/
+last/
+lastqc/
+paired_bam/
+statistic/
+window/
+gene_counts/
+FSD/
+fragments/
+end_motif/
+peaks/
+consensus_peak/
+annotation/
+chromHMM/
+bw/
+QC_plots/
+coverage_plots/
+
+# ML outputs that may contain local absolute paths
+machine_learning_subtyping/**/nestcv_results.tsv
+machine_learning_tumor/**/nestcv_results.tsv
+machine_learning_stage/**/nestcv_results.tsv
+subtyping/**/sbatch_scripts*/
+tumor_likeness/**/sbatch_scripts/
+feature_selection/**/sbatch_scripts/

@@ -1,0 +1,70 @@
+# ----------------------------------------------------------------------------
+# 1. 输入文件路径
+# ----------------------------------------------------------------------------
+# 原始数据路径模板
+r1_raw: "raw/{sample}/{sample}_1.fq.gz"
+r2_raw: "raw/{sample}/{sample}_2.fq.gz"
+
+# 参考基因组文件
+genome: "ref/hg38/hg38.fa"
+genome_2bit: "ref/hg38/hg38.2bit"
+blacklist: "ref/hg38/hg38_blacklist.v2.bed"
+
+# 注释文件
+genebody: "ref/hg38/hg38_genebody.gtf"
+genebody_bed: "ref/hg38/hg38_genebody.bed"
+promoter: "ref/hg38/hg38_promoter.gtf"
+ts_promoter: "ref/hg38/tissue_specific_promoter.bed"
+ts_enhancer: "ref/hg38/tissue_specific_enhancer.bed"
+chrom_state: "ref/hg38/chrom_state.bed"
+chrom_state_anno: "ref/hg38/chrom_state_anno.tsv"
+OCR: "ref/hg38/tumor_ocr.bed"
+liftover_chain: "ref/hg38/hg19ToHg38.over.chain.gz"
+
+# ----------------------------------------------------------------------------
+# 2. 样本和元数据
+# ----------------------------------------------------------------------------
+samples_file: "samples.txt"   # samples.txt每一行都为一个样本名称
+metadata: "cfDNA_metadata2_TNM.csv"
+label: "type"
+PoN_samples_path_file: "PoN_samples_path.txt"
+
+# ----------------------------------------------------------------------------
+# 3. 分析参数
+# ----------------------------------------------------------------------------
+# 窗口分析参数
+window_size: 3000
+length_upper: 1
+length_lower: 0
+
+# Peak 分析参数
+k_mer: 150
+error_rate: 2
+percent_threshold: 0.2
+spm_threshold: 5
+fc_threshold: 2
+
+# 片段长度分析参数
+bin_size: 3000000
+length_bin: 10
+
+
+# 过滤参数
+GC_threshold: 0.3
+mappability_threshold: 0.9
+variance_threshold: 0.01
+zero_threshold: 0.9
+
+# 其他参数
+bed_file: "statistic/bed_files/"
+up_cutoff: null 
+down_cutoff: null
+
+
+# ----------------------------------------------------------------------------
+# 6. TOO (Tissue of Origin) 分析
+# ----------------------------------------------------------------------------
+ref_peak_dir: "ref_peaks/GSE144530_hg38"
+ref_peak_glob: "*_peaks.narrowPeak"
+
+
