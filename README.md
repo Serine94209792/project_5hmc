@@ -31,6 +31,12 @@ This file defines the main runtime configuration for the Snakemake workflow.
 
 This file provide sample-level metadata used throughout downstream analyses. The `cfDNA_metadata2_TNM.csv` is important for label assignment, stage information, and subtyping-related workflows.
 
+Notes for encoded columns in `cfDNA_metadata2_TNM.csv`:
+- For binary columns, `0` indicates absence and `1` indicates presence.
+- In the `type` column, `0` represents non-PDAC and `1` represents PDAC.
+- For the sex column, `0` represents female and `1` represents male.
+- In the `differentiation` column, a higher numeric value indicates a lower degree of differentiation.
+
 ## Directory Guide
 
 ### `feature_selection/`
